@@ -1,7 +1,6 @@
-import { brand } from '../brand';
 import { useI18n } from '../i18n';
-import { Button } from './Button';
-import { Icon } from './Icon';
+import { ContactForm } from './ContactForm';
+import './Form.css';
 import './Hero.css';
 import './Maintenance.css';
 
@@ -29,10 +28,9 @@ export function Maintenance() {
           </span>
         </div>
 
-        <div className="hero__ctas reveal">
-          <Button href={`mailto:${brand.email}`}>
-            {m.cta} <Icon name="arrow" size={16} />
-          </Button>
+        <div className="maintenance__contact reveal">
+          <h2 className="maintenance__contact-title">{t.contact.title}</h2>
+          <ContactForm text={t.contact} />
         </div>
       </div>
     </section>
