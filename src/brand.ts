@@ -14,7 +14,7 @@ export const brand = {
   /** Teljes kép logó, pl. '/logo.svg'. Ha meg van adva, a szöveges logó helyett ez jelenik meg. */
   logoSrc: '' as string,
 
-  email: 'hello@admaintenance.example',
+  email: 'info@adglobalapp.com',
 
   social: [
     { label: 'LinkedIn', href: 'https://uk.linkedin.com/company/adglobalapp', icon: 'linkedin' },
