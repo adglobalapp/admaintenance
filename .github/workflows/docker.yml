@@ -32,6 +32,9 @@ jobs:
           context: .
           platforms: linux/arm64,linux/amd64
           push: true
+          build-args: |
+            VITE_CONTACT_API_URL=${{ vars.CONTACT_API_URL || 'https://api.adreuse.uk' }}
+            VITE_TURNSTILE_SITE_KEY=${{ vars.TURNSTILE_SITE_KEY }}
           tags: |
             ghcr.io/adglobalapp/admaintenance:latest
             ghcr.io/adglobalapp/admaintenance:${{ github.sha }}
