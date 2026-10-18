@@ -31,3 +31,13 @@ src/
   styles/base.css     # reset, globális elemek, utility osztályok
   components/         # Header, Maintenance, Footer, Logo, Icon
 ```
+
+## Élesítés (Docker)
+
+Minden `main`-re kerülő változás után a GitHub Actions (`.github/workflows/docker.yml`) elkészíti és feltölti az image-et ARM64-re (Raspberry Pi) és amd64-re:
+
+```
+ghcr.io/adglobalapp/admaintenance:latest
+```
+
+Az image egy nginx, ami a buildelt oldalt szolgálja ki a 80-as porton (`nginx.conf`: tömörítés, hosszú cache az `assets/` fájlokra, ismeretlen útvonalra `index.html`). Kipróbálás: `docker run --rm -p 8080:80 ghcr.io/adglobalapp/admaintenance:latest`.
