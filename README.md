@@ -18,7 +18,7 @@ npm run preview   # a build kiszolgálása
 Minden lecserélhető dolog egy-egy helyen van:
 
 - **Színek, betűk, méretek:** `src/styles/tokens.css` – az egész oldal ezekből a változókból dolgozik. A betűtípusokat az `index.html` tölti be (Google Fonts).
-- **Logó:** a hivatalos AdApp logójel a `public/logo-mark.png`; a mellette álló felirat (`brand.ts` → `logoText`) színátmenete és betűtípusa a `tokens.css` `--logo-*` és `--font-logo` tokenjeiből jön. Teljes kép logóhoz: `brand.ts` → `logoSrc`. Favicon: `public/favicon.png`, `public/apple-touch-icon.png`.
+- **Logó:** a hivatalos AdApp logójel a `public/logo-mark.png`, a láblécben az AdApp logó a `public/adapp-logo.png`; a mellette álló felirat (`brand.ts` → `logoText`) színátmenete és betűtípusa a `tokens.css` `--logo-*` és `--font-logo` tokenjeiből jön. Teljes kép logóhoz: `brand.ts` → `logoSrc`. Böngészőfül- és telefonikonok: `public/favicon.ico`, `favicon-32.png`, `favicon.png`, `apple-touch-icon.png`, `icon-192.png`, `icon-512.png` és `site.webmanifest`.
 - **Név, elérhetőségek, közösségi linkek:** `src/brand.ts`.
 
 ## Felépítés
