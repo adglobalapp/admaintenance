@@ -13,7 +13,7 @@ export type Content = {
     status: string;
     cta: string;
   };
-  footer: { tags: string[]; rights: string };
+  footer: { tags: string[]; registered: string; rights: string };
 };
 
 const hu: Content = {
@@ -25,7 +25,7 @@ const hu: Content = {
     status: 'Folyamatban',
     cta: 'Írj nekünk',
   },
-  footer: { tags: ['Karbantartás', 'Frissítés', 'Hamarosan'], rights: 'Minden jog fenntartva.' },
+  footer: { tags: ['Karbantartás', 'Frissítés', 'Hamarosan'], registered: 'Az Egyesült Királyságban bejegyzett cég.', rights: 'Minden jog fenntartva.' },
 };
 
 const en: Content = {
@@ -37,7 +37,7 @@ const en: Content = {
     status: 'In progress',
     cta: 'Email us',
   },
-  footer: { tags: ['Maintenance', 'Updates', 'Coming soon'], rights: 'All rights reserved.' },
+  footer: { tags: ['Maintenance', 'Updates', 'Coming soon'], registered: 'Registered in the UK.', rights: 'All rights reserved.' },
 };
 
 const es: Content = {
@@ -49,7 +49,7 @@ const es: Content = {
     status: 'En curso',
     cta: 'Escríbenos',
   },
-  footer: { tags: ['Mantenimiento', 'Actualización', 'Muy pronto'], rights: 'Todos los derechos reservados.' },
+  footer: { tags: ['Mantenimiento', 'Actualización', 'Muy pronto'], registered: 'Registrada en el Reino Unido.', rights: 'Todos los derechos reservados.' },
 };
 
 export const content: Record<Lang, Content> = { hu, en, es };

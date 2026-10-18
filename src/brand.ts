@@ -17,7 +17,14 @@ export const brand = {
   email: 'hello@admaintenance.example',
 
   social: [
-    { label: 'LinkedIn', href: 'https://www.linkedin.com', icon: 'linkedin' },
-    { label: 'GitHub', href: 'https://github.com/adglobalapp', icon: 'github' },
+    { label: 'LinkedIn', href: 'https://uk.linkedin.com/company/adglobalapp', icon: 'linkedin' },
   ] satisfies { label: string; href: string; icon: IconName }[],
+
+  /** Anyacég: a láblécben a logója és a jogi sor. */
+  parent: {
+    name: 'AdGlobalApp',
+    company: 'AdGlobalApp Ltd.',
+    url: 'https://www.adglobalapp.com',
+    logoSrc: '/adapp-logo.png',
+  },
 };
